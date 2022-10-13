@@ -17,17 +17,20 @@ class MainController {
         return "main/hello"
     }
 
+
+
+
     @GetMapping("/hello")
     @ResponseBody
     fun index(response : HttpServletResponse, request : HttpServletRequest): String {
-        response.setContentType("text/plain")
-        response.setCharacterEncoding("UTF-8")
+        response.contentType = "text/plain"
+        response.characterEncoding = "UTF-8"
         var nom : String = request.getParameter("nom") ?: ""
         if (nom.isEmpty())
             nom = request.session.getAttribute("nom")?.toString() ?: "inconnu"
         else
             request.session.setAttribute("nom", nom)
-        return "Hello $nom"
+        return "Hello $nom\n"
     }
 
 }
