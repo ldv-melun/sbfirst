@@ -14,15 +14,12 @@ class MainController {
     @GetMapping("/")
     fun index(model: Model): String {
         model["title"] = "Hello world !"
-        return "main/hello"
+        return "main/index"
     }
-
-
-
 
     @GetMapping("/hello")
     @ResponseBody
-    fun index(response : HttpServletResponse, request : HttpServletRequest): String {
+    fun hello(response : HttpServletResponse, request : HttpServletRequest): String {
         response.contentType = "text/plain"
         response.characterEncoding = "UTF-8"
         var nom : String = request.getParameter("nom") ?: ""
