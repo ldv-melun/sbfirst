@@ -7,7 +7,7 @@ Un support de formation
 * git opérationnel sur la machine
 * IntelliJ opérationnel avec un jdk 17
 
-Deux façons différentes de télécharger le projet.
+Deux façons différentes de télécharger le projet test.
 
 ## (option 1) Cloner le projet 
 
@@ -108,11 +108,10 @@ Corriger les erreurs de configuration éventuelles
 
 Plusieurs possibilité 
 
-* Panneau de gauche du projet, clic droit sur `SpringBootFirstApplication.kt`, puis `Run` (on peut faire de mêe avec les tests unitaires)
+* Panneau de gauche du projet, clic droit sur `SpringBootFirstApplication.kt`, puis `Run` (on peut faire de même avec les tests unitaires)
 
-
-
-* Raccourci, `Maj F10` ou en cliquant sur l'icone  ![image](docs/sbfirst-run-direct.png)
+* Raccourci, `Maj F10` ou en cliquant sur l'icone en haut à droite
+![image](docs/sbfirst-icon-run.png)
 
 
 ### Vérification
@@ -126,16 +125,14 @@ Vérifier que le lancement se soit bien déroulé.
 Faire pointer un de vos navigateurs web sur : `localhost:8080`
 ![image](docs/sbfirst-hello-world.png)
 
+Si vous obtenez ce résultat c'st que le contrôleur (méthode nommée `index` dans `MainController`) a bien fait son travail, et que votre machine est opérationnelle pour du développement web !
+
 Le port `8080` est celui par défaut. 
 
-Il peut être changer en renseignant un nouveau port dans `application.properties`.  Faire une recherche sur le net pour trouver comment faire (`https://stackoverflow.com/` est votre ami)
+Il peut être facilement changé en renseignant un nouveau port dans `application.properties`.  Faire une recherche sur le net pour trouver comment faire (`https://stackoverflow.com/` est votre ami)
 
 ## Bilan
 
-Si vous êtes arrivé sans embuche (ou après les avoir corrigé), alors bravo, une petite pause bien méritée. 
+Si vous êtes arrivé sans embuche (ou après correction), alors bravo, une petite pause bien méritée. 
 
-Vous être maintenant opérationnel pour suivre la formation de développeur web !
-
-
-
-
+Vous, et votre machine de dev, êtes maintenant opérationnels pour suivre la formation de développeur web !
