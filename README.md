@@ -82,3 +82,60 @@ Une opération qui consiste, dans les grandes lignes,  à
 
 ![image](docs/sbfirst-build.png)
 
+Les curieux pourront aller consulter le dossier `/target` qui contient les fichiers compilés.
+
+## Lancement à partir de l'IDE
+
+Pour lancer votre application web, il faut bien s'assurer d'avoir les 3 tiers web opérationnel. 
+
+* Un client HTTP (un navigateur web fera l'affaire)
+* Un serveur HTTP (l'IDE instancie un serveur apache tomcat pour vous - un plugin d'IntelliJ)  
+* Un gestionnaire de base de données (sans ce tiers pour l'instant)
+
+Il existe plusieurs façon de lancer votre application, c'est à dire un serveur Tomcat en fronta de votre application qui vient d'être compilée.
+
+### Vérification de la configuration 
+
+Vérification du lanceur : `Run/Edit configuration`
+
+![image](docs/sbfirst-run-configuration.png)
+
+On choisira `Local machine` (le poste du développeur devra disposer des 3 tiers web pour être eligible dans ce cas - c'est le plus courant)
+
+Corriger les erreurs de configuration éventuelles
+
+### Lancement
+
+Plusieurs possibilité 
+
+* Panneau de gauche du projet, clic droit sur `SpringBootFirstApplication.kt`, puis `Run` (on peut faire de mêe avec les tests unitaires)
+
+
+
+* Raccourci, `Maj F10` ou en cliquant sur l'icone  ![image](docs/sbfirst-run-direct.png)
+
+
+### Vérification
+
+Vérifier que le lancement se soit bien déroulé.
+![image](docs/sbfirst-tomcat:8080.png)
+
+
+### Activation par un client HTTP
+
+Faire pointer un de vos navigateurs web sur : `localhost:8080`
+![image](docs/sbfirst-hello-world.png)
+
+Le port `8080` est celui par défaut. 
+
+Il peut être changer en renseignant un nouveau port dans `application.properties`.  Faire une recherche sur le net pour trouver comment faire (`https://stackoverflow.com/` est votre ami)
+
+## Bilan
+
+Si vous êtes arrivé sans embuche (ou après les avoir corrigé), alors bravo, une petite pause bien méritée. 
+
+Vous être maintenant opérationnel pour suivre la formation de développeur web !
+
+
+
+
