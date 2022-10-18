@@ -29,5 +29,4 @@ class MainController {
             request.session.setAttribute("nom", nom)
         return "Hello $nom\n"
     }
-
 }
