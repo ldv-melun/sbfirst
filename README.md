@@ -77,7 +77,7 @@ La solution consiste alors à créer un fichier nommé `settings.xml` à la raci
 </settings>
 ```
 
-Remarque : le protocole `http` est celui utilisé pour atteindre le proxy. À modifier le cas échéant.
+Remarque : le protocole `http` ou `https` est celui utilisé pour atteindre le proxy. À personnaliser ! 
 
 ## Build 
 
