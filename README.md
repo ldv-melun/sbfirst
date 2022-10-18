@@ -59,12 +59,19 @@ La solution consiste alors à créer un fichier nommé `settings.xml` à la raci
  
   <proxies>
     <proxy>
-      <id>myproxy</id>
+      <id>myproxy1</id>
       <active>true</active>
       <protocol>http</protocol>
       <host>proxy.somewhere.com</host>
       <port>8080</port>
     </proxy>
+    <proxy>
+      <id>myproxy2</id>
+      <active>true</active>
+      <protocol>https</protocol>
+      <host>proxy.somewhere.com</host>
+      <port>8080</port>
+    </proxy>    
   </proxies>
  
 </settings>
