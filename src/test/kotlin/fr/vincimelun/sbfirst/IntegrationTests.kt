@@ -1,5 +1,6 @@
 package fr.vincimelun.sbfirst
 
+import fr.vincimelun.sbfirst.controller.min
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
@@ -17,6 +18,14 @@ class IntegrationTests constructor(@Autowired val restTemplate: TestRestTemplate
         assertEquals(httpEntity.statusCode, HttpStatus.OK)
         assertNotNull(httpEntity.body)
         assertTrue(httpEntity.body!!.contains("<h1>Hello world !</h1>"))
+    }
+
+    @Test
+    fun `Assert demo-ge ERREUR`() {
+        val httpEntity = restTemplate.getForEntity<String>("/demo-ge")
+        assertEquals(httpEntity.statusCode, HttpStatus.OK)
+        assertNotNull(httpEntity.body)
+        assertTrue(httpEntity.body!!.contains("ERREUR : min sur liste vide IMPOSSIBLE"))
     }
 
 }
